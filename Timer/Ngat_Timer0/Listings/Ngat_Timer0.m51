@@ -1,0 +1,132 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/24/2020  15:35:57  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\Ngat_Timer0 PRINT (.\Listings\Ngat_Timer0.m51) RAMSIZE (256)
+>> 
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\Ngat_Timer0 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         ?DT?MAIN
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0008H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0045H     UNIT         ?PR?MAIN?MAIN
+            CODE    08D1H     002CH     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    08FDH     0021H     UNIT         ?PR?INTERRUPT0?MAIN
+            CODE    091EH     0005H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Ngat_Timer0 (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Ngat_Timer0 (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/24/2020  15:35:57  PAGE 2
+
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:08FDH         PUBLIC        Interrupt0
+  B:00A8H.7       PUBLIC        EA
+  C:088CH         PUBLIC        main
+  D:0008H         PUBLIC        count
+  D:0089H         PUBLIC        TMOD
+  B:00A8H.1       PUBLIC        ET0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  C:08D1H         PUBLIC        _delay_ms
+  B:0088H.4       PUBLIC        TR0
+  D:000AH         PUBLIC        i
+  D:000CH         PUBLIC        j
+  D:000EH         PUBLIC        t
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  C:08D1H         LINE#         4
+  C:08D1H         LINE#         5
+  C:08DFH         LINE#         6
+  C:08DFH         LINE#         7
+  C:08FCH         LINE#         8
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          MAIN
+  C:088CH         LINE#         9
+  C:088CH         LINE#         10
+  C:088CH         LINE#         11
+  C:088FH         LINE#         12
+  C:0892H         LINE#         13
+  C:0895H         LINE#         14
+  C:0898H         LINE#         16
+  C:089AH         LINE#         17
+  C:089CH         LINE#         18
+  C:089EH         LINE#         20
+  C:089EH         LINE#         21
+  C:089EH         LINE#         22
+  C:08A1H         LINE#         23
+  C:08A7H         LINE#         24
+  C:08ACH         LINE#         25
+  C:08B2H         LINE#         26
+  C:08B5H         LINE#         27
+  C:08BCH         LINE#         28
+  -------         ENDPROC       MAIN
+  -------         PROC          INTERRUPT0
+  C:08FDH         LINE#         31
+  C:08FFH         LINE#         33
+  C:0902H         LINE#         34
+  C:0905H         LINE#         35
+  C:090DH         LINE#         36
+  C:0913H         LINE#         37
+  C:0913H         LINE#         38
+  C:0918H         LINE#         39
+  C:091BH         LINE#         40
+  C:091BH         LINE#         41
+  -------         ENDPROC       INTERRUPT0
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/24/2020  15:35:57  PAGE 3
+
+
+  -------         ENDMOD        MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0099H BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=17.0 xdata=0 code=297
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

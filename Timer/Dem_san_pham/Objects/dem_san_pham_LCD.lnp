@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\LIB_lcd_8051.obj" 
+TO ".\Objects\dem_san_pham_LCD" 
+PRINT(".\Listings\dem_san_pham_LCD.m51") RAMSIZE(256) 

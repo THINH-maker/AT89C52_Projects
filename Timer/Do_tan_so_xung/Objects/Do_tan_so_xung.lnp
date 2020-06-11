@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\LIB_lcd_8051.obj" 
+TO ".\Objects\Do_tan_so_xung" 
+PRINT(".\Listings\Do_tan_so_xung.m51") RAMSIZE(256) 
